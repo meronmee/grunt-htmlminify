@@ -1,11 +1,10 @@
 # grunt-htmlminify
-> Minify HTML
 
 Minifies HTML with any CSS & JS using [html-minify](https://github.com/yize/html-minify).
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `~0.4.0`.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -22,7 +21,7 @@ grunt.loadNpmTasks('grunt-htmlminify');
 
 
 
-## Htmlmin task
+## Htmlminify task
 _Run this task with the `grunt htmlminify` command._
 
 
@@ -121,7 +120,7 @@ Remove empty elements.
 
 ```javascript
 grunt.initConfig({
-  htmlminify: {                                     // Task
+  htmlminify: {                                  // Task
     dist: {                                      // Target
       options: {                                 // Target options
         removeComments: true,
@@ -140,6 +139,8 @@ grunt.initConfig({
     }
   }
 });
+
+grunt.loadNpmTasks('grunt-htmlminify');
 
 grunt.registerTask('default', ['htmlminify']);
 ```
